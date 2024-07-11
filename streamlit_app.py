@@ -3,6 +3,11 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 
+st.set_page_config(
+    page_title = "Starbucks-Nutrition Analysis",
+    layout = "wide",
+)
+
 df = pd.read_csv("starbucks.csv")
 df_header = list(df)
 
